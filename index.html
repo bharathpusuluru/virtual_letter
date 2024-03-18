@@ -13,12 +13,13 @@
             <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong>Hi  </strong>
- 
-                    </div>
+                        <strong>Hello Beautiful,</strong>
+                        <p> In all the world, there is no heart for me like yours. <br> In all the world, there is no love for you like mine.<strong> <br><br>  Bharath  </p>
+                      
                 </div>
             </div>
             <div class="heart"></div>
+            <span class="heart-text">Click me</span>
         </div>
     </div>
     <script>
@@ -26,6 +27,30 @@
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
         });
+        document.querySelector('.heart').addEventListener('click', function() {
+    document.querySelector('.heart-text').style.display = 'none';
+    // Trigger your popup action here
+});
+
+// If you want the heart text to also respond to clicks,
+// add a similar event listener to '.heart-text' itself
+document.querySelector('.heart-text').addEventListener('click', function() {
+    this.style.display = 'none';
+    // Trigger your popup action here, if needed
+});
+document.querySelector('.heart').addEventListener('click', function() {
+    const heartText = document.querySelector('.heart-text');
+    if (heartText) heartText.remove(); // Removes the element
+    // Trigger your popup action here
+});
+
+// Similar to hiding, if you want '.heart-text' clicks to remove it,
+// you can add an event listener directly on that element
+document.querySelector('.heart-text').addEventListener('click', function() {
+    this.remove(); // Removes the element
+    // Trigger your popup action here, if needed
+});
+
     </script>
 </body>
 </html>
