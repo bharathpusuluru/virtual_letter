@@ -81,10 +81,20 @@ body{
   background: var(--heart-color);
   z-index: 4;
   transform: translate(-50%, -20%) rotate(45deg);
-  transition: transform 0.5s ease-in-out 1s;
-  box-shadow: 0 1px 6px var(--shadow-color);
-  cursor: pointer;
+  transition: transform 1s ease-in-out 1s;
 }
+.heart-text {
+  position: absolute;
+  top: calc(50% + 20px); /* Position below the heart; adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -10px); /* Adjust vertically below the heart */
+  z-index: 5;
+  color: var(--txt-color); /* Assuming you want to use the text color variable */
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10px; /* Or any size that fits your design */
+}
+
 .heart:before, 
 .heart:after {
   content: "";
