@@ -18,7 +18,7 @@ body{
   justify-content: center;
 }
 .envelope-wrapper {
-  transform: translateY(60px); /* Adjust the value as needed */
+  transform: translateY(55px); /* Adjust the value as needed */
 }
 
 .container {
