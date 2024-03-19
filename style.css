@@ -96,7 +96,7 @@ body{
   color: var(--txt-color); /* Assuming you want to use the text color variable */
   cursor: pointer;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 10px; /* Or any size that fits your design */
+  font-size: 8.5px; /* Or any size that fits your design */
 }
 
 .heart:before, 
