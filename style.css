@@ -1,12 +1,12 @@
 :root{
-  --primary: #ff0000;
-  --bg-color: rgb(5, 53, 61);
-  --bg-envelope-color: #ee0aaa;
-  --envelope-tab: #ee0aaa;
-  --envelope-cover: #ee0aaa;
+  --primary: #000000  ;
+  --bg-color: #FFB6C1;
+  --bg-envelope-color: #FF0000;
+  --envelope-tab: #FF0000;
+  --envelope-cover: #FF0000;
   --shadow-color: rgba(255, 255, 255, 0.2);
-  --txt-color: #ffffff;
-  --heart-color: rgb(252, 8, 8);
+  --txt-color: #F5F5F5;
+  --heart-color: #FFB6C1;
 }
 body{
   margin: 0;
@@ -20,6 +20,7 @@ body{
 .envelope-wrapper {
   transform: translateY(60px); /* Adjust the value as needed */
 }
+
 .container {
   height: 100vh;
   display: grid;
